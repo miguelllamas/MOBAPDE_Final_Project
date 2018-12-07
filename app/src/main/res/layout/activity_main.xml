@@ -17,19 +17,19 @@
         android:typeface="serif" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/cashButton"
         android:layout_width="match_parent"
         android:layout_height="101dp"
         android:text="@string/cashier" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/custButton"
         android:layout_width="match_parent"
         android:layout_height="101dp"
         android:text="@string/customer" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/chefButon"
         android:layout_width="match_parent"
         android:layout_height="101dp"
         android:text="@string/Chef" />
