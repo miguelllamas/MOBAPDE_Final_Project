@@ -1,5 +1,6 @@
 package com.example.rolo.ramennagikiosk;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -25,6 +26,8 @@ public class customer_view extends AppCompatActivity {
                     return true;
                 case R.id.navigation_dashboard:
 //                    mTextMessage.setText(R.string.title_dashboard);
+                    Intent intent = new Intent(getApplicationContext(), CartActivity.class);
+                    startActivity(intent);
                     return true;
 //                case R.id.navigation_notifications:
 //                    mTextMessage.setText(R.string.title_notifications);

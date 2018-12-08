@@ -8,6 +8,7 @@
     <string name="title_home">Menu</string>
     <string name="title_dashboard">Cart</string>
     <string name="prompt">Enter Admin Code</string>
+    <string name="prompt1">How many?</string>
     <string name="ok">Submit</string>
     <string name="check">View</string>
     <string name="fail">Wrong Admin Code</string>
@@ -21,5 +22,8 @@
     <string name="greenkingDesc">A fusion of fresh basil and olive oil with delectable tonkotsu broth in a truly unique combination; lavishly garnished with grated parmesan cheese and richly marbles chashu.</string>
     <string name="orderTitle">Orders</string>
     <string name="OrderD">Order Details</string>
-
+    <string name="mark">Mark as Complete</string>
+    <string name="cart">Cart</string>
+    <string name="print">Print Receipt and Confirmation Number</string>
+    <string name="remove">Remove</string>
 </resources>

@@ -1,11 +1,11 @@
 package com.example.rolo.ramennagikiosk;
 
 public class menuData {
-    String name;
-    String desc;
-    int price;
+    private String name;
+    private String desc;
+    private float price;
 
-    public menuData(String name, int price, String desc) {
+    public menuData(String name, float price, String desc) {
         this.name = name;
         this.desc = desc;
         this.price = price;
@@ -15,7 +15,7 @@ public class menuData {
         return name;
     }
 
-    public int getPrice() {
+    public float getPrice() {
         return price;
     }
 

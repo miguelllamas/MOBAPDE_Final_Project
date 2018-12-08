@@ -11,13 +11,15 @@ import java.util.ArrayList;
 
 public class orderAdaptor extends RecyclerView.Adapter<orderHolder> {
 
-    ArrayList<orderData> order_Data;
-    Context activity;
+    private ArrayList<orderData> order_Data;
+    private Context activity;
 
     public orderAdaptor(Context activity){
         this.activity = activity;
         this.order_Data = new ArrayList<>();
 
+
+        //these values will be retrieved by firebase
         //placeholder values
         ArrayList<String> strings = new ArrayList<>();
         strings.add("Gyoza");
@@ -47,5 +49,9 @@ public class orderAdaptor extends RecyclerView.Adapter<orderHolder> {
     @Override
     public int getItemCount() {
         return this.order_Data.size();
+    }
+
+    public void notifyChange(){
+        notifyDataSetChanged();
     }
 }

@@ -10,12 +10,12 @@ import android.widget.TextView;
 
 public class menuHolder extends RecyclerView.ViewHolder {
 
-    TextView itemName;
-    TextView itemPrice;
-    String desc;
-    String name;
-    int price;
-    Button viewMore;
+    private TextView itemName;
+    private TextView itemPrice;
+    private String desc;
+    private String name;
+    private float price;
+    private Button viewMore;
 
     public menuHolder(@NonNull View itemView) {
         super(itemView);
@@ -29,7 +29,7 @@ public class menuHolder extends RecyclerView.ViewHolder {
         this.name = name;
         itemName.setText(name);
     }
-    public void setPrice(int price) {
+    public void setPrice(float price) {
         this.price = price;
         itemPrice.setText(price+" PHP");
     }

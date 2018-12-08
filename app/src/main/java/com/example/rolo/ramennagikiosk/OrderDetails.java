@@ -11,6 +11,7 @@ public class OrderDetails extends AppCompatActivity {
 
     private TextView orderView;
     private Button back;
+    private Button archive;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,12 +19,19 @@ public class OrderDetails extends AppCompatActivity {
 
         orderView = findViewById(R.id.listView);
         back = findViewById(R.id.returnButton);
+        archive = findViewById(R.id.markFinish);
         orders = getIntent().getStringExtra("orders");
 
         orderView.setText(orders);
 
         back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                finish();
+            }
+        });
+        archive.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //Archive item in database or delete? :D
                 finish();
             }
         });

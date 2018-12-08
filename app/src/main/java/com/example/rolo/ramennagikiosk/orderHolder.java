@@ -11,12 +11,12 @@ import java.util.ArrayList;
 
 public class orderHolder extends RecyclerView.ViewHolder {
 
-    TextView orderNumber;
-    String orderNos;
-    String desc;
-    String orders; //to send in the other activity
-    ArrayList<String> ordersList;
-    Button viewMore;
+    private TextView orderNumber;
+    private String orderNos;
+    private String desc;
+    private String orders; //to send in the other activity
+    private ArrayList<String> ordersList;
+    private Button viewMore;
 
     public orderHolder(@NonNull View itemView) {
         super(itemView);
