@@ -6,8 +6,9 @@
     <string name="Chef">Chef Setup</string>
     <string name="title_activity_customer_view">customer_view</string>
     <string name="title_home">Menu</string>
-    <string name="title_dashboard">View Cart</string>
+    <string name="title_dashboard">Cart</string>
     <string name="prompt">Enter Admin Code</string>
     <string name="ok">Submit</string>
     <string name="fail">Wrong Admin Code</string>
+    <string name='cashMSG'>Input confirmation Number</string>
 </resources>
