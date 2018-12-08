@@ -9,6 +9,17 @@
     <string name="title_dashboard">Cart</string>
     <string name="prompt">Enter Admin Code</string>
     <string name="ok">Submit</string>
+    <string name="check">View</string>
     <string name="fail">Wrong Admin Code</string>
     <string name='cashMSG'>Input confirmation Number</string>
+    <string name="defaultDesc">No Description Available</string>
+    <string name="addButton">Add to Cart</string>
+    <string name="Back">Back</string>
+    <string name="origDesc">Award-winning tonkotsu pork-broth prepared in the traditional method. Mouth-wateringly rich, fresh and aromatic; special handcrafted noodles and classic Nagi pork chashu.</string>
+    <string name="redkingDesc">A striking blend of garlic, chili oil and cayenne pepper in a velvety broth; topped by a tempting ball of miso-infused minced pork and special Nagi spices with tender chashu.</string>
+    <string name="blackkingDesc">Description: A striking blend of garlic, chili oil and cayenne pepper in a velvety broth; topped by a tempting ball of miso-infused minced pork and special Nagi spices with tender chashu.</string>
+    <string name="greenkingDesc">A fusion of fresh basil and olive oil with delectable tonkotsu broth in a truly unique combination; lavishly garnished with grated parmesan cheese and richly marbles chashu.</string>
+    <string name="orderTitle">Orders</string>
+    <string name="OrderD">Order Details</string>
+
 </resources>

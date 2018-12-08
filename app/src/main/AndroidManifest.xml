@@ -20,7 +20,9 @@
             android:name=".customer_view"
             android:label="@string/title_activity_customer_view" />
         <activity android:name=".chef_view" />
-        <activity android:name=".cashier_view"></activity>
+        <activity android:name=".cashier_view" />
+        <activity android:name=".details" />
+        <activity android:name=".OrderDetails"></activity>
     </application>
 
 </manifest>
