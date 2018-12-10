@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "992728780184",
+    "firebase_url": "https://ramennagi-be951.firebaseio.com",
+    "project_id": "ramennagi-be951",
+    "storage_bucket": "ramennagi-be951.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992728780184:android:a2cd20efc15a6f48",
+        "android_client_info": {
+          "package_name": "com.example.rolo.ramennagikiosk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992728780184-4ai3aqapi3mq1pt6m8neqjj3elkaavur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChJ9Wobo1uqqkIDGIyKuKyyVMI-BepD78"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

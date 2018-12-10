@@ -13,6 +13,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import org.w3c.dom.Text;
 
 public class details extends AppCompatActivity {
@@ -25,6 +28,10 @@ public class details extends AppCompatActivity {
     private TextView priceAndDesc;
     private Button addCart;
     private Button back;
+
+    //firebase
+    private FirebaseDatabase fd;
+    private DatabaseReference dr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +80,9 @@ public class details extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int id) {
                 int value;
                 value = Integer.parseInt(userInput.getText().toString());
+                fd = FirebaseDatabase.getInstance();
+                dr = fd.getReference("ramenNagi");
+                dr.child("order1").setValue("Toast");
             }
         });
         android.app.AlertDialog dialog = builder.create();
