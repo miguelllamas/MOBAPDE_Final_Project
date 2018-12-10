@@ -17,7 +17,7 @@ public class menuAdaptor extends RecyclerView.Adapter<menuHolder>{
     private String[] menu_items;
     private String[] menu_prices;
     private String[] menu_descriptions;
-    private int[] menu_images = {R.drawable.menu1};
+    private int[] menu_images = {R.drawable.menu1, R.drawable.menu2, R.drawable.menu3, R.drawable.menu4, R.drawable.menu5, R.drawable.menu6, R.drawable.menu7, R.drawable.menu8, R.drawable.menu9};
 
     public menuAdaptor(Context activity){
         this.menu = new ArrayList<>();
@@ -28,7 +28,7 @@ public class menuAdaptor extends RecyclerView.Adapter<menuHolder>{
         menu_descriptions = activity.getResources().getStringArray(R.array.menu_descriptions);
 
         for(int i = 0; i < menu_items.length; i++) {
-            menu.add(new menuData(menu_items[i], Float.valueOf(menu_prices[i]), menu_descriptions[i], menu_images[0]));
+            menu.add(new menuData(menu_items[i], Float.valueOf(menu_prices[i]), menu_descriptions[i], menu_images[i]));
         }
     }
 

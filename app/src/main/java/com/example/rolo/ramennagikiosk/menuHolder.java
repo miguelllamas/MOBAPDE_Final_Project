@@ -58,6 +58,7 @@ public class menuHolder extends RecyclerView.ViewHolder {
                 intent.putExtra("name", name);
                 intent.putExtra("price", price);
                 intent.putExtra("desc", desc);
+                intent.putExtra("image", image);
                 v.getContext().startActivity(intent);
             }
         });

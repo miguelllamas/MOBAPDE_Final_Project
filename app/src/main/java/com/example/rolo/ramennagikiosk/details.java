@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,14 +20,19 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import org.w3c.dom.Text;
 
+import java.text.DecimalFormat;
+
 public class details extends AppCompatActivity {
 
     private String name;
-    private String desc;
     private float price;
+    private String desc;
+    private int image;
 
     private TextView itemName;
-    private TextView priceAndDesc;
+    private TextView itemPrice;
+    private TextView itemDescription;
+    private ImageView itemImageFull;
     private Button addCart;
     private Button back;
 
@@ -39,18 +45,24 @@ public class details extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        itemName = findViewById(R.id.itemNameD);
-        priceAndDesc = findViewById(R.id.itemPriceAndDesc);
+        itemName = findViewById(R.id.itemName);
+        itemPrice = findViewById(R.id.itemPrice);
+        itemDescription = findViewById(R.id.itemDescription);
+        itemImageFull = findViewById(R.id.itemImageFull);
         addCart = findViewById(R.id.addButton);
         back = findViewById(R.id.backDetails);
 
         name = getIntent().getStringExtra("name");
-        desc = getIntent().getStringExtra("desc");
         price = getIntent().getFloatExtra("price", -1);
+        desc = getIntent().getStringExtra("desc");
+        image = getIntent().getIntExtra("image", -1);
 
+        DecimalFormat df2 = new DecimalFormat("0.00");
         //Setting values of xml objects
         setName();
-        priceAndDesc.setText(price +" PHP\n\n" + desc);
+        itemImageFull.setImageResource(image);
+        itemPrice.setText("PHP " + df2.format(price));
+        itemDescription.setText(desc);
         addCart.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 promptDialog();
