@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        OrderIDSingleton singleton = OrderIDSingleton.getInstance();
+        singleton.addOrderID("Order1");
+        singleton.setCurrOrderID("Order1");
+
         ChefButton = findViewById(R.id.chefButon);
         CustomerButton = findViewById(R.id.custButton);
         CashierButton = findViewById(R.id.cashButton);
