@@ -7,8 +7,7 @@ public class ConvertPrice {
     private ArrayList<String> item_name;
     private ArrayList<Integer> item_price;
 
-    public int returnPrice (String n) {
-
+    public ConvertPrice(){
         item_name = new ArrayList<>();
         item_price = new ArrayList<>();
 
@@ -57,10 +56,12 @@ public class ConvertPrice {
         item_name.add("Asahi"); item_price.add(145);
         item_name.add("Sapporo"); item_price.add(150);
         item_name.add("Kirin"); item_price.add(150);
+    }
 
+    public int returnPrice (String n) {
         /* LOOP THROUGH THE ARRAYLISTS */
         for (int i=0; i<item_name.size(); i++){
-            if (n == item_name.get(i))
+            if (n.equals(item_name.get(i)))
                 return item_price.get(i);
         }
 

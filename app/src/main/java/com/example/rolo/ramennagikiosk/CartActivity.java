@@ -9,7 +9,9 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.InputType;
+import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -36,6 +38,7 @@ public class CartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         totalView = findViewById(R.id.totalView);
         printButton = findViewById(R.id.printButton);
@@ -66,19 +69,24 @@ public class CartActivity extends AppCompatActivity {
         dr.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
+                totalBill = 0;
                 for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
                     // TODO: handle the post
-                    for (DataSnapshot child: postSnapshot.getChildren()){
-                        child.getValue().toString();
-                        //add converter here
-
-                        //set total value
-
+                    if (postSnapshot.getKey().toString().equals(singleton.getCurrOrderID())){
+                        for (DataSnapshot child: postSnapshot.getChildren()){
+//                            if (!child.getValue().toString().equals("false") && !child.getValue().toString().equals("true")){
+//                                cartData.add(new CartData(child.getValue().toString(), 410, child.getKey()));
+//                            }
+                            //add converter here
+                            ConvertPrice converter = new ConvertPrice();
+                            //set total value
+                            totalBill = totalBill + converter.returnPrice(child.getValue().toString());
+                            Log.d("VALUE TAG", "FLOAT VALUE (TOTALBILL): " + converter.returnPrice(child.getValue().toString()));
+                            Log.d("VALUE TAG", "FLOAT VALUE (TOTALBILL): " + totalBill);
+                        }
                     }
-
                 }
-                totalView.setText("Total Bill: ");
+                totalView.setText("Total Bill: " + totalBill);
             }
 
             @Override
@@ -93,7 +101,7 @@ public class CartActivity extends AppCompatActivity {
         builder.setTitle("CONFIRM");
         final TextView userInput = new TextView(this);
         final OrderIDSingleton singleton = OrderIDSingleton.getInstance();
-        userInput.setText("TOTAL BILL: \n" + "ConfirmationPin: " + singleton.getCurrOrderID());
+        userInput.setText("TOTAL BILL: " + totalBill + "\nConfirmationPin: " + singleton.getCurrOrderID());
         builder.setView(userInput);
 
 

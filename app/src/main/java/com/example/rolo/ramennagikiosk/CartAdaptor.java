@@ -34,13 +34,14 @@ public class CartAdaptor extends RecyclerView.Adapter<CartHolder>{
         dr.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                ConvertPrice converter = new ConvertPrice();
                 cartData.clear();
                 for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
                     // TODO: handle the post
                     if (postSnapshot.getKey().toString().equals(singleton.getCurrOrderID())){
                         for (DataSnapshot child: postSnapshot.getChildren()){
                             if (!child.getValue().toString().equals("false") || !child.getValue().toString().equals("true")){
-                                cartData.add(new CartData(child.getValue().toString(), 410, child.getKey()));
+                                cartData.add(new CartData(child.getValue().toString(), converter.returnPrice(child.getValue().toString()), child.getKey()));
                             }
                         }
                     }
