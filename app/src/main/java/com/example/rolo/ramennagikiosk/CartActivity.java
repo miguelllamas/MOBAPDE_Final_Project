@@ -33,6 +33,8 @@ public class CartActivity extends AppCompatActivity {
     private Button returnButton;
 
     private float totalBill;
+    private double serviceCharge;
+    private double totalTalaga;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +72,8 @@ public class CartActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 totalBill = 0;
+                serviceCharge  = 0;
+                totalTalaga  = 0;
                 for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
                     // TODO: handle the post
                     if (postSnapshot.getKey().toString().equals(singleton.getCurrOrderID())){
@@ -86,7 +90,9 @@ public class CartActivity extends AppCompatActivity {
                         }
                     }
                 }
-                totalView.setText("Total Bill: " + totalBill);
+                serviceCharge = totalBill * 0.12;
+                totalTalaga = totalBill + serviceCharge;
+                totalView.setText("Total Amount: " + totalBill + "\nService Charge: "+ serviceCharge + "\nTotal Bill: "+ totalTalaga);
             }
 
             @Override
@@ -101,7 +107,7 @@ public class CartActivity extends AppCompatActivity {
         builder.setTitle("CONFIRM");
         final TextView userInput = new TextView(this);
         final OrderIDSingleton singleton = OrderIDSingleton.getInstance();
-        userInput.setText("TOTAL BILL: " + totalBill + "\nConfirmationPin: " + singleton.getCurrOrderID());
+        userInput.setText("TOTAL BILL: " + totalTalaga + "\nConfirmationPin: " + singleton.getCurrOrderID());
         builder.setView(userInput);
 
 
