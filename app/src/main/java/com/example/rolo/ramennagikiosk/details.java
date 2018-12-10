@@ -81,14 +81,20 @@ public class details extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int id) {
                 int value;
-                value = Integer.parseInt(userInput.getText().toString());
-                fd = FirebaseDatabase.getInstance();
-                dr = fd.getReference();
-                OrderIDSingleton singleton = OrderIDSingleton.getInstance();
-                for (int i = 0; i < value; i++){
-                    dr.child(singleton.getCurrOrderID()).push().setValue(name);
+                try{
+                    value = Integer.parseInt(userInput.getText().toString());
+                    fd = FirebaseDatabase.getInstance();
+                    dr = fd.getReference();
+                    OrderIDSingleton singleton = OrderIDSingleton.getInstance();
+                    for (int i = 0; i < value; i++){
+                        dr.child(singleton.getCurrOrderID()).push().setValue(name);
+                    }
+                    finish();
+                } catch (NumberFormatException e){
+                    Toast toast = Toast.makeText(getApplicationContext(), "Invalid Input", Toast.LENGTH_SHORT);
+                    toast.show();
                 }
-                finish();
+
             }
         });
         android.app.AlertDialog dialog = builder.create();
