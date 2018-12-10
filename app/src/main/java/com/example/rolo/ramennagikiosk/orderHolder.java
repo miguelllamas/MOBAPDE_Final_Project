@@ -42,6 +42,7 @@ public class orderHolder extends RecyclerView.ViewHolder {
                 }
                 Intent intent = new Intent(v.getContext(), OrderDetails.class);
                 intent.putExtra("orders", strOrders);
+                intent.putExtra("key", orderNos);
                 v.getContext().startActivity(intent);
             }
         });

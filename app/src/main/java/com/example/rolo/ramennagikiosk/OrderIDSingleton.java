@@ -1,6 +1,7 @@
 package com.example.rolo.ramennagikiosk;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class OrderIDSingleton {
     // static variable single_instance of type Singleton
@@ -19,7 +20,9 @@ public class OrderIDSingleton {
     {
         if (single_instance == null){
             single_instance = new OrderIDSingleton();
-            ID = 0;
+            Random rand = new Random();
+
+            ID = rand.nextInt(400000) + 100000;
         }
 
         return single_instance;
@@ -46,6 +49,7 @@ public class OrderIDSingleton {
     }
 
     public void incrementID(){
-        ID++;
+        Random rand = new Random();
+        ID = rand.nextInt(400000) + 100000;
     }
 }

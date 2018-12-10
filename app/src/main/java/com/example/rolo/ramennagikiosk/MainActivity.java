@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, customer_view.class);
                 startActivity(intent);
+                finish();
             }
         });
         CashierButton.setOnClickListener(new View.OnClickListener() {
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(MainActivity.this, chef_view.class);
 //                intent.putExtra(EXTRA_MESSAGE, message);
                         startActivity(intent);
+                        finish();
                     } else {
                         Log.d("INPUT TAG", "CHEF FAIL");
                         Toast toast = Toast.makeText(getApplicationContext(), R.string.fail, Toast.LENGTH_SHORT);
@@ -74,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                     if (value.equals("admin123")){
                         Intent intent = new Intent(MainActivity.this, cashier_view.class);
                         startActivity(intent);
+                        finish();
                     } else {
                         Log.d("INPUT TAG", "CASHIER FAIL");
                         Toast toast = Toast.makeText(getApplicationContext(), R.string.fail, Toast.LENGTH_SHORT);

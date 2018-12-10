@@ -86,7 +86,7 @@ public class details extends AppCompatActivity {
                 for (int i = 0; i < value; i++){
                     dr.child(singleton.getCurrOrderID()).push().setValue(name);
                 }
-
+                finish();
             }
         });
         android.app.AlertDialog dialog = builder.create();

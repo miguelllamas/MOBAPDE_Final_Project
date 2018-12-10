@@ -3,6 +3,7 @@ package com.example.rolo.ramennagikiosk;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,10 +37,13 @@ public class CartAdaptor extends RecyclerView.Adapter<CartHolder>{
                 cartData.clear();
                 for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
                     // TODO: handle the post
-                    for (DataSnapshot child: postSnapshot.getChildren()){
-                        cartData.add(new CartData(child.getValue().toString(), 410, child.getKey()));
+                    if (postSnapshot.getKey().toString().equals(singleton.getCurrOrderID())){
+                        for (DataSnapshot child: postSnapshot.getChildren()){
+                            if (!child.getValue().toString().equals("false") || !child.getValue().toString().equals("true")){
+                                cartData.add(new CartData(child.getValue().toString(), 410, child.getKey()));
+                            }
+                        }
                     }
-
                 }
                 notifyChange();
             }
