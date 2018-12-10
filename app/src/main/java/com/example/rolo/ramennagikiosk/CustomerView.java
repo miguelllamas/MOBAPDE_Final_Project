@@ -9,13 +9,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.view.WindowManager;
-import android.widget.TextView;
 
-public class customer_view extends AppCompatActivity {
+public class CustomerView extends AppCompatActivity {
 
 //    private TextView mTextMessage;
     private RecyclerView recyclerArea;
-    private menuAdaptor adapter;
+    private MenuAdapter adapter;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -51,7 +50,7 @@ public class customer_view extends AppCompatActivity {
         recyclerArea = findViewById(R.id.recyclerArea);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerArea.setLayoutManager(layoutManager);
-        adapter = new menuAdaptor(getApplicationContext());
+        adapter = new MenuAdapter(getApplicationContext());
         recyclerArea.setAdapter(adapter);
     }
 

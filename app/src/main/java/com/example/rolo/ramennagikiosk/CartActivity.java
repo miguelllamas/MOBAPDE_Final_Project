@@ -1,19 +1,15 @@
 package com.example.rolo.ramennagikiosk;
 
 import android.content.DialogInterface;
-import android.content.res.Configuration;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -22,12 +18,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import org.w3c.dom.Text;
-
 public class CartActivity extends AppCompatActivity {
 
     private RecyclerView recyclerArea;
-    private CartAdaptor adapter;
+    private CartAdapter adapter;
     private TextView totalView;
     private Button printButton;
     private Button returnButton;
@@ -50,7 +44,7 @@ public class CartActivity extends AppCompatActivity {
         recyclerArea = findViewById(R.id.cartRecycler);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerArea.setLayoutManager(layoutManager);
-        adapter = new CartAdaptor(getApplicationContext());
+        adapter = new CartAdapter(getApplicationContext());
         recyclerArea.setAdapter(adapter);
         printButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

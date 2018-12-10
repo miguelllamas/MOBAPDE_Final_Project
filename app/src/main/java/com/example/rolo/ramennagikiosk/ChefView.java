@@ -6,10 +6,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.WindowManager;
 
-public class chef_view extends AppCompatActivity {
+public class ChefView extends AppCompatActivity {
 
     private RecyclerView recyclerArea;
-    private orderAdaptor adapter;
+    private OrderAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +18,7 @@ public class chef_view extends AppCompatActivity {
         recyclerArea = findViewById(R.id.orderRecycler);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerArea.setLayoutManager(layoutManager);
-        adapter = new orderAdaptor(getApplicationContext());
+        adapter = new OrderAdapter(getApplicationContext());
         recyclerArea.setAdapter(adapter);
     }
 }

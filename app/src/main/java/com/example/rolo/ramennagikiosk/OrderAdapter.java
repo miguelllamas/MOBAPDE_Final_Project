@@ -3,7 +3,6 @@ package com.example.rolo.ramennagikiosk;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,12 +15,12 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class orderAdaptor extends RecyclerView.Adapter<orderHolder> {
+public class OrderAdapter extends RecyclerView.Adapter<OrderHolder> {
 
     private ArrayList<orderData> order_Data;
     private Context activity;
 
-    public orderAdaptor(Context activity){
+    public OrderAdapter(Context activity){
         this.activity = activity;
         this.order_Data = new ArrayList<>();
 
@@ -68,15 +67,15 @@ public class orderAdaptor extends RecyclerView.Adapter<orderHolder> {
 
     @NonNull
     @Override
-    public orderHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public OrderHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
         View view = inflater.inflate(R.layout.order_item, viewGroup, false);
-        orderHolder holder = new orderHolder(view);
+        OrderHolder holder = new OrderHolder(view);
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull orderHolder order_Holder, int i) {
+    public void onBindViewHolder(@NonNull OrderHolder order_Holder, int i) {
         order_Holder.setOrderNumber(order_Data.get(i).getOrderNumber());
         order_Holder.setOrdersList(order_Data.get(i).getOrders());
         order_Holder.setButton();

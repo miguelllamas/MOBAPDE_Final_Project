@@ -1,12 +1,12 @@
 package com.example.rolo.ramennagikiosk;
 
-public class menuData {
+public class MenuData {
     private String name;
     private String desc;
     private float price;
     private int image;
 
-    public menuData(String name, float price, String desc, int image) {
+    public MenuData(String name, float price, String desc, int image) {
         this.name = name;
         this.desc = desc;
         this.price = price;

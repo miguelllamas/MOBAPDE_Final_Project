@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".customer_view"
+            android:name=".CustomerView"
             android:label="@string/title_activity_customer_view" />
-        <activity android:name=".chef_view" />
-        <activity android:name=".cashier_view" />
+        <activity android:name=".ChefView" />
+        <activity android:name=".CashierView" />
         <activity android:name=".details" />
         <activity android:name=".OrderDetails" />
         <activity android:name=".CartActivity"></activity>

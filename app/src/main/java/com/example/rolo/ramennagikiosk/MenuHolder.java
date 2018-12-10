@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import java.text.DecimalFormat;
 
-public class menuHolder extends RecyclerView.ViewHolder {
+public class MenuHolder extends RecyclerView.ViewHolder {
 
     private TextView itemName;
     private TextView itemPrice;
@@ -22,7 +22,7 @@ public class menuHolder extends RecyclerView.ViewHolder {
     private int image;
     private Button viewMore;
 
-    public menuHolder(@NonNull View itemView) {
+    public MenuHolder(@NonNull View itemView) {
         super(itemView);
 
         itemName = itemView.findViewById(R.id.itemName);

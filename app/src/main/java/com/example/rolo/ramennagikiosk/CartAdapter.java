@@ -16,11 +16,11 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class CartAdaptor extends RecyclerView.Adapter<CartHolder>{
+public class CartAdapter extends RecyclerView.Adapter<CartHolder>{
 
     private ArrayList<CartData> cartData;
     private Context activity;
-    public CartAdaptor(Context activity){
+    public CartAdapter(Context activity){
         this.activity = activity;
         cartData = new ArrayList<>();
 

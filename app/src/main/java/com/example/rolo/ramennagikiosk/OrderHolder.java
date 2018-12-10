@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class orderHolder extends RecyclerView.ViewHolder {
+public class OrderHolder extends RecyclerView.ViewHolder {
 
     private TextView orderNumber;
     private String orderNos;
@@ -18,7 +18,7 @@ public class orderHolder extends RecyclerView.ViewHolder {
     private ArrayList<String> ordersList;
     private Button viewMore;
 
-    public orderHolder(@NonNull View itemView) {
+    public OrderHolder(@NonNull View itemView) {
         super(itemView);
         orderNumber = itemView.findViewById(R.id.orderNumber);
         viewMore = itemView.findViewById(R.id.viewOrder);

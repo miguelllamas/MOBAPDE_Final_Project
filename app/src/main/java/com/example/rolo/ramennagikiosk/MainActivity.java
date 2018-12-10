@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         });
         CustomerButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, customer_view.class);
+                Intent intent = new Intent(MainActivity.this, CustomerView.class);
                 startActivity(intent);
                 finish();
             }
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 value = userInput.getText().toString();
                 if (type.equals("CHEF")){
                     if (value.equals("admin123")){
-                        Intent intent = new Intent(MainActivity.this, chef_view.class);
+                        Intent intent = new Intent(MainActivity.this, ChefView.class);
 //                intent.putExtra(EXTRA_MESSAGE, message);
                         startActivity(intent);
                         finish();
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if (type.equals("CASHIER")){
                     if (value.equals("admin123")){
-                        Intent intent = new Intent(MainActivity.this, cashier_view.class);
+                        Intent intent = new Intent(MainActivity.this, CashierView.class);
                         startActivity(intent);
                         finish();
                     } else {
