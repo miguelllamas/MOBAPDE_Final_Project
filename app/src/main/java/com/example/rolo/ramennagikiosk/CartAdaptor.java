@@ -7,6 +7,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
 
 public class CartAdaptor extends RecyclerView.Adapter<CartHolder>{
@@ -19,8 +25,34 @@ public class CartAdaptor extends RecyclerView.Adapter<CartHolder>{
 
         //place holder data
         //fix later depending on how to query from firebase
-        cartData.add(new CartData("Gyoza", 220));
-        cartData.add(new CartData("Red King", 410));
+        FirebaseDatabase fd;
+        fd = FirebaseDatabase.getInstance();
+        final OrderIDSingleton singleton = OrderIDSingleton.getInstance();
+        DatabaseReference dr = fd.getReference();
+
+        dr.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                cartData.clear();
+                for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
+                    // TODO: handle the post
+                    for (DataSnapshot child: postSnapshot.getChildren()){
+                        cartData.add(new CartData(child.getValue().toString(), 410, child.getKey()));
+                    }
+
+                }
+                notifyChange();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+
+//        cartData.add(new CartData("Gyoza", 410));
+//        cartData.add(new CartData("Red King", 410));
     }
     @NonNull
     @Override
@@ -34,6 +66,7 @@ public class CartAdaptor extends RecyclerView.Adapter<CartHolder>{
     @Override
     public void onBindViewHolder(@NonNull CartHolder cartHolder, int i) {
         cartHolder.setText(cartData.get(i).getItem(), cartData.get(i).getPrice());
+        cartHolder.setKey(cartData.get(i).getKey());
         cartHolder.setButton();
     }
 

@@ -81,10 +81,12 @@ public class details extends AppCompatActivity {
                 int value;
                 value = Integer.parseInt(userInput.getText().toString());
                 fd = FirebaseDatabase.getInstance();
-                dr = fd.getReference("ramenNagi");
+                dr = fd.getReference();
                 OrderIDSingleton singleton = OrderIDSingleton.getInstance();
+                for (int i = 0; i < value; i++){
+                    dr.child(singleton.getCurrOrderID()).push().setValue(name);
+                }
 
-                dr.child(singleton.getCurrOrderID()).setValue("Mama Mo");
             }
         });
         android.app.AlertDialog dialog = builder.create();

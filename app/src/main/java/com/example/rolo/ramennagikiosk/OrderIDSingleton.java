@@ -7,6 +7,7 @@ public class OrderIDSingleton {
     private static OrderIDSingleton single_instance = null;
     private ArrayList<String> orders;
     private String currOrderID;
+    private static int ID;
 
     // private constructor restricted to this class itself
     private OrderIDSingleton() {
@@ -16,8 +17,10 @@ public class OrderIDSingleton {
     // static method to create instance of Singleton class
     public static OrderIDSingleton getInstance()
     {
-        if (single_instance == null)
+        if (single_instance == null){
             single_instance = new OrderIDSingleton();
+            ID = 0;
+        }
 
         return single_instance;
     }
@@ -36,5 +39,13 @@ public class OrderIDSingleton {
 
     public void setCurrOrderID(String currOrderID) {
         this.currOrderID = currOrderID;
+    }
+
+    public int getID(){
+        return ID;
+    }
+
+    public void incrementID(){
+        ID++;
     }
 }
