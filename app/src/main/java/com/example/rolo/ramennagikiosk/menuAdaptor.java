@@ -14,21 +14,22 @@ public class menuAdaptor extends RecyclerView.Adapter<menuHolder>{
     private ArrayList<menuData> menu;
     private Context activity;
 
+    private String[] menu_items;
+    private String[] menu_prices;
+    private String[] menu_descriptions;
+    private int[] menu_images = {R.drawable.menu1};
+
     public menuAdaptor(Context activity){
         this.menu = new ArrayList<>();
         this.activity = activity;
 
-        //place holder values for the menu
-        menu.add(new menuData("Original King - Butao", 390, activity.getResources().getString(R.string.origDesc)));
-        menu.add(new menuData("Black King - Kuroo", 410, activity.getResources().getString(R.string.blackkingDesc)));
-        menu.add(new menuData("Red King - Akao", 410, activity.getResources().getString(R.string.redkingDesc)));
-        menu.add(new menuData("Green King - Midorio", 410, activity.getResources().getString(R.string.greenkingDesc)));
-        menu.add(new menuData("Gyoza", 220, activity.getResources().getString(R.string.defaultDesc)));
-        menu.add(new menuData("Sui-Gyoza", 200, activity.getResources().getString(R.string.defaultDesc)));
-        menu.add(new menuData("Aurora Shrimp", 370, activity.getResources().getString(R.string.defaultDesc)));
-        menu.add(new menuData("Nagi Vanilla Ice Cream", 150, activity.getResources().getString(R.string.defaultDesc)));
-        menu.add(new menuData("Seseme Q", 160, activity.getResources().getString(R.string.defaultDesc)));
+        menu_items = activity.getResources().getStringArray(R.array.menu_items);
+        menu_prices = activity.getResources().getStringArray(R.array.menu_prices);
+        menu_descriptions = activity.getResources().getStringArray(R.array.menu_descriptions);
 
+        for(int i = 0; i < menu_items.length; i++) {
+            menu.add(new menuData(menu_items[i], Float.valueOf(menu_prices[i]), menu_descriptions[i], menu_images[0]));
+        }
     }
 
     @NonNull
@@ -45,6 +46,7 @@ public class menuAdaptor extends RecyclerView.Adapter<menuHolder>{
         menuHolder.setDesc(menu.get(i).getDesc());
         menuHolder.setName(menu.get(i).getName());
         menuHolder.setPrice(menu.get(i).getPrice());
+        menuHolder.setImage(menu.get(i).getImage());
         menuHolder.setButton();
     }
 

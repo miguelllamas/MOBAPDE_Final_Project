@@ -10,7 +10,7 @@
     <string name="prompt">Enter Admin Code</string>
     <string name="prompt1">How many?</string>
     <string name="ok">Submit</string>
-    <string name="check">View</string>
+    <string name="check">ADD TO CART</string>
     <string name="fail">Wrong Admin Code</string>
     <string name='cashMSG'>Input confirmation Number</string>
     <string name="defaultDesc">No Description Available</string>
@@ -26,4 +26,42 @@
     <string name="cart">Cart</string>
     <string name="print">Print Receipt and Confirmation Number</string>
     <string name="remove">Remove</string>
+
+
+    <string-array name="menu_items">
+        <item>Original King - Butao</item>
+        <item>Black King - Kuroo</item>
+        <item>Red King - Akao</item>
+        <item>Green King - Midorio</item>
+        <item>Gyoza</item>
+        <item>Sui-Gyoza</item>
+        <item>Aurora Shrimp</item>
+        <item>Nagi Vanilla Ice Cream</item>
+        <item>Seseme Q</item>
+    </string-array>
+    <string-array name="menu_descriptions">
+        <item>Award-winning tonkotsu pork-broth prepared in the traditional method. Mouth-wateringly rich, fresh and aromatic; special handcrafted noodles and classic Nagi pork chashu.</item>
+        <item>Description: A striking blend of garlic, chili oil and cayenne pepper in a velvety broth; topped by a tempting ball of miso-infused minced pork and special Nagi spices with tender chashu.</item>
+        <item>A striking blend of garlic, chili oil and cayenne pepper in a velvety broth; topped by a tempting ball of miso-infused minced pork and special Nagi spices with tender chashu.</item>
+        <item>A fusion of fresh basil and olive oil with delectable tonkotsu broth in a truly unique combination; lavishly garnished with grated parmesan cheese and richly marbles chashu.</item>
+        <item>Gyoza</item>
+        <item>Sui-Gyoza</item>
+        <item>Aurora Shrimp</item>
+        <item>Nagi Vanilla Ice Cream</item>
+        <item>Seseme Q</item>
+    </string-array>
+    <string-array name="menu_prices">
+        <item>390</item>
+        <item>410</item>
+        <item>410</item>
+        <item>410</item>
+        <item>220</item>
+        <item>200</item>
+        <item>370</item>
+        <item>150</item>
+        <item>160</item>
+    </string-array>
+
+
+
 </resources>
