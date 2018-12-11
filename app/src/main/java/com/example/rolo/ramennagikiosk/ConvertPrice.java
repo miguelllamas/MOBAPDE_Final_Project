@@ -12,10 +12,10 @@ public class ConvertPrice {
         item_price = new ArrayList<>();
 
         /* RAMEN */
-        item_name.add("Original King - Butao"); item_price.add(390);
-        item_name.add("Black King - Kuroo"); item_price.add(410);
-        item_name.add("Red King - Akao"); item_price.add(410);
-        item_name.add("Green King - Midorio"); item_price.add(410);
+        item_name.add("Original King (Butao)"); item_price.add(390);
+        item_name.add("Black King (Kuroo)"); item_price.add(410);
+        item_name.add("Red King (Akao)"); item_price.add(410);
+        item_name.add("Green King (Midorio)"); item_price.add(410);
 
         /* SIDE DISHES */
         item_name.add("Gyoza"); item_price.add(220);
