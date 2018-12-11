@@ -21,8 +21,8 @@
 
         <ImageView
             android:id="@+id/itemImageFull"
-            android:layout_width="600dp"
-            android:layout_height="320dp"
+            android:layout_width="200dp"
+            android:layout_height="105dp"
             android:layout_weight="1"
             android:paddingRight="10dp"
             app:srcCompat="@drawable/cart" />
@@ -43,9 +43,9 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/title_home"
-                android:textAlignment="viewStart"
+                android:textAlignment="center"
                 android:textColor="#ffffff"
-                android:textSize="50sp"
+                android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -60,9 +60,9 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/title_home"
-                android:textAlignment="viewStart"
+                android:textAlignment="center"
                 android:textColor="#ffffff"
-                android:textSize="30sp"
+                android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -75,7 +75,6 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/cart_mini"
                 android:text="@string/addButton"
                 app:layout_constraintBottom_toTopOf="@+id/backDetails"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -96,7 +95,7 @@
         android:layout_weight="1"
         android:text="TextView"
         android:textColor="#ffffff"
-        android:textSize="30sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
