@@ -18,6 +18,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.DecimalFormat;
+
 public class CartActivity extends AppCompatActivity {
 
     private RecyclerView recyclerArea;
@@ -65,6 +67,8 @@ public class CartActivity extends AppCompatActivity {
         dr.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                DecimalFormat df2 = new DecimalFormat("0.00");
+
                 totalBill = 0;
                 serviceCharge  = 0;
                 totalTalaga  = 0;
@@ -86,7 +90,7 @@ public class CartActivity extends AppCompatActivity {
                 }
                 serviceCharge = totalBill * 0.12;
                 totalTalaga = totalBill + serviceCharge;
-                totalView.setText("Total Amount: " + totalBill + "\nService Charge: "+ serviceCharge + "\nTotal Bill: "+ totalTalaga);
+                totalView.setText("Total Amount: PHP " + df2.format(totalBill) + "\nService Charge: PHP "+ df2.format(serviceCharge) + "\nTotal Bill: PHP "+ df2.format(totalTalaga));
             }
 
             @Override
@@ -103,8 +107,6 @@ public class CartActivity extends AppCompatActivity {
         final OrderIDSingleton singleton = OrderIDSingleton.getInstance();
         userInput.setText("TOTAL BILL: " + totalTalaga + "\nConfirmationPin: " + singleton.getCurrOrderID());
         builder.setView(userInput);
-
-
 
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override

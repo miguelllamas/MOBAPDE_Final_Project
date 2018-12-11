@@ -88,7 +88,6 @@ public class details extends AppCompatActivity {
         userInput.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL | InputType.TYPE_NUMBER_FLAG_SIGNED);
         userInput.setRawInputType(Configuration.KEYBOARD_12KEY);
 
-
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
@@ -103,10 +102,9 @@ public class details extends AppCompatActivity {
                     }
                     finish();
                 } catch (NumberFormatException e){
-                    Toast toast = Toast.makeText(getApplicationContext(), "Invalid Input", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(getApplicationContext(), R.string.invalid, Toast.LENGTH_SHORT);
                     toast.show();
                 }
-
             }
         });
         android.app.AlertDialog dialog = builder.create();

@@ -13,20 +13,26 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import org.w3c.dom.Text;
 
+import java.text.DecimalFormat;
+
 public class CartHolder extends RecyclerView.ViewHolder {
 
     private TextView itemname;
+    private TextView itemprice;
     private Button remove;
     private String key;
 
     public CartHolder(@NonNull View itemView) {
         super(itemView);
         itemname = itemView.findViewById(R.id.cartItem);
+        itemprice = itemView.findViewById(R.id.cartItemPrice);
         remove = itemView.findViewById(R.id.removeButton);
     }
 
     public void setText(String itemName, float price){
-        itemname.setText(itemName + " - " + price);
+        DecimalFormat df2 = new DecimalFormat("0.00");
+        itemname.setText(itemName);
+        itemprice.setText("PHP " + df2.format(price));
     }
 
     public void setKey(String key) {

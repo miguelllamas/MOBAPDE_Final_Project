@@ -1,32 +1,36 @@
 <resources>
     <string name="app_name">RamenNagiKiosk</string>
     <string name="mainActtivityTitle">Setup Kiosk</string>
+
     <string name="cashier">Cashier Setup</string>
     <string name="customer">Customer Setup</string>
     <string name="Chef">Chef Setup</string>
+
     <string name="title_activity_customer_view">customer_view</string>
     <string name="title_home">Menu</string>
     <string name="title_dashboard">Cart</string>
-    <string name="prompt">Enter Admin Code</string>
-    <string name="prompt1">How many?</string>
+
+    <string name="prompt">Enter admin code:</string>
+    <string name="fail">Incorrect admin code. Please try again.</string>
+
+    <string name="prompt1">Enter quantity of ordered item:</string>
+    <string name="invalid">Invalid input. Please try again.</string>
+
     <string name="ok">Submit</string>
-    <string name="check">ADD TO CART</string>
-    <string name="fail">Wrong Admin Code</string>
-    <string name='cashMSG'>Input confirmation Number</string>
-    <string name="defaultDesc">No Description Available</string>
+
+    <string name="check">Add to Cart</string>
     <string name="addButton">Add to Cart</string>
+
+    <string name="cashMSG">Enter confirmation number:</string>
+    <string name="defaultDesc">No Description Available</string>
     <string name="Back">Back</string>
-    <string name="origDesc">Award-winning tonkotsu pork-broth prepared in the traditional method. Mouth-wateringly rich, fresh and aromatic; special handcrafted noodles and classic Nagi pork chashu.</string>
-    <string name="redkingDesc">A striking blend of garlic, chili oil and cayenne pepper in a velvety broth; topped by a tempting ball of miso-infused minced pork and special Nagi spices with tender chashu.</string>
-    <string name="blackkingDesc">Description: A striking blend of garlic, chili oil and cayenne pepper in a velvety broth; topped by a tempting ball of miso-infused minced pork and special Nagi spices with tender chashu.</string>
-    <string name="greenkingDesc">A fusion of fresh basil and olive oil with delectable tonkotsu broth in a truly unique combination; lavishly garnished with grated parmesan cheese and richly marbles chashu.</string>
+
     <string name="orderTitle">Orders</string>
     <string name="OrderD">Order Details</string>
     <string name="mark">Mark as Complete</string>
     <string name="cart">Cart</string>
     <string name="print">Print Receipt and Confirmation Number</string>
     <string name="remove">Remove</string>
-
 
     <string-array name="menu_items">
         <item>Original King (Butao)</item>
@@ -39,6 +43,7 @@
         <item>Nagi Vanilla Ice Cream</item>
         <item>Sesame Q</item>
     </string-array>
+
     <string-array name="menu_descriptions">
         <item>Award-winning tonkotsu pork-broth prepared in the traditional method. Mouth-wateringly rich, fresh and aromatic; special handcrafted noodles and classic Nagi pork chashu.</item>
         <item>Fragrant blackened garlic and squid in a silky broth with succulent chashu; finished with a ball of minced pork, black sesame and Nagi spices.</item>
@@ -50,6 +55,7 @@
         <item>Nagi\'s vanilla ice cream served with 2 kinds of liquor.</item>
         <item>Thinly sliced cucumber seasoned with Nagi\'s special spices.</item>
     </string-array>
+
     <string-array name="menu_prices">
         <item>390</item>
         <item>410</item>
@@ -61,7 +67,5 @@
         <item>150</item>
         <item>160</item>
     </string-array>
-
-
 
 </resources>

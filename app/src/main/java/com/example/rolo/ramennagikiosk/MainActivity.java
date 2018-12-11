@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button ChefButton;
     Button CustomerButton;
     Button CashierButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         singleton.addOrderID("ORDERS"+singleton.getID());
         singleton.setCurrOrderID("ORDERS"+singleton.getID());
 
-        ChefButton = findViewById(R.id.chefButon);
+        ChefButton = findViewById(R.id.chefButton);
         CustomerButton = findViewById(R.id.custButton);
         CashierButton = findViewById(R.id.cashButton);
 
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void promptDialog(String value){
+    public void promptDialog(String value) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(R.string.prompt);
         final EditText userInput = new EditText(this);
@@ -60,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
                 String value;
                 Log.d("INPUT TAG", "INPUT MSG: " + userInput.getText().toString());
                 value = userInput.getText().toString();
-                if (type.equals("CHEF")){
-                    if (value.equals("admin123")){
+                if (type.equals("CHEF")) {
+                    if (value.equals("admin123")) {
                         Intent intent = new Intent(MainActivity.this, ChefView.class);
 //                intent.putExtra(EXTRA_MESSAGE, message);
                         startActivity(intent);
@@ -72,8 +73,8 @@ public class MainActivity extends AppCompatActivity {
                         toast.show();
                     }
 
-                } else if (type.equals("CASHIER")){
-                    if (value.equals("admin123")){
+                } else if (type.equals("CASHIER")) {
+                    if (value.equals("admin123")) {
                         Intent intent = new Intent(MainActivity.this, CashierView.class);
                         startActivity(intent);
                         finish();
@@ -82,16 +83,10 @@ public class MainActivity extends AppCompatActivity {
                         Toast toast = Toast.makeText(getApplicationContext(), R.string.fail, Toast.LENGTH_SHORT);
                         toast.show();
                     }
-
                 }
-
-//
             }
         });
         AlertDialog dialog = builder.create();
         dialog.show();
     }
-
-
-
 }

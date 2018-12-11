@@ -43,7 +43,6 @@ public class CustomerView extends AppCompatActivity {
         setContentView(R.layout.activity_customer_view);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-
 //        mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -53,5 +52,4 @@ public class CustomerView extends AppCompatActivity {
         adapter = new MenuAdapter(getApplicationContext());
         recyclerArea.setAdapter(adapter);
     }
-
 }
