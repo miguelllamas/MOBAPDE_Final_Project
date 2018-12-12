@@ -20,6 +20,7 @@ public class OrderDetails extends AppCompatActivity {
     private String orders;
     private String key;
 
+    private TextView orderIdHeader;
     private TextView orderView;
     private Button back;
     private Button archive;
@@ -29,6 +30,7 @@ public class OrderDetails extends AppCompatActivity {
         setContentView(R.layout.activity_order_details);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
+        orderIdHeader = (TextView) findViewById(R.id.orderIdHeader);
         orderView = (TextView) findViewById(R.id.listView);
         orderView.setMovementMethod(new ScrollingMovementMethod());
 
@@ -37,6 +39,7 @@ public class OrderDetails extends AppCompatActivity {
         orders = getIntent().getStringExtra("orders");
         key = getIntent().getStringExtra("key");
 
+        orderIdHeader.setText("Viewing Order Confirmation ID: " + key);
         orderView.setText(orders);
 
         back.setOnClickListener(new View.OnClickListener() {

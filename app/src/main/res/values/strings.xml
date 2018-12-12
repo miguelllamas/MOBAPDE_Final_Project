@@ -13,7 +13,7 @@
     <string name="prompt">Enter admin code:</string>
     <string name="fail">Incorrect admin code. Please try again.</string>
 
-    <string name="prompt1">Enter quantity of ordered item:</string>
+    <string name="prompt1">Enter quantity of this item to be ordered:</string>
     <string name="invalid">Invalid input. Please try again.</string>
 
     <string name="ok">Submit</string>
@@ -110,10 +110,10 @@
         <item>Seaweed.</item>
         <item>Classic Nagi pork chashu.</item>
         <item>Flavored egg - one of Nagi\'s classic trademarks.</item>
-        <item>Kikurage mushrooms.</item>
-        <item>Pork belly.</item>
-        <item>Green onions.</item>
-        <item>Kyabetsu.</item>
+        <item>Japanese wood ear mushrooms.</item>
+        <item>Japanese braised pork belly.</item>
+        <item>Japanese savory green onions.</item>
+        <item>Japanese pickled cabbage.</item>
         <item>Japanese rice, served Nagi-style.</item>
     </string-array>
 
