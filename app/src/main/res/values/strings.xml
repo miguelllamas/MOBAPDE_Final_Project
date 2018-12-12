@@ -20,6 +20,7 @@
     <string name="ok2">OK</string>
 
     <string name="check">View Order</string>
+    <string name="check2">View Item</string>
     <string name="addButton">Add to Cart</string>
 
     <string name="cashMSG">Enter confirmation number:</string>
@@ -107,7 +108,7 @@
         <item>In the region of Kyushu, it is common for people to enjoy another serving of noodles.</item>
         <item>Seaweed.</item>
         <item>Classic Nagi pork chashu.</item>
-        <item>Flavored egg - one of Nagi's classic trademarks.</item>
+        <item>Flavored egg - one of Nagi\'s classic trademarks.</item>
         <item>Kikurage mushrooms.</item>
         <item>Pork belly.</item>
         <item>Green onions.</item>
