@@ -33,6 +33,10 @@
     <string name="print">Print Receipt and Confirmation Number</string>
     <string name="remove">Remove</string>
 
+    <string name="menu1">DISHES</string>
+    <string name="menu2">SIDES</string>
+    <string name="menu3">DRINKS</string>
+
     <string-array name="menu_items">
         <item>Original King (Butao)</item>
         <item>Black King (Kuroo)</item>
@@ -50,28 +54,34 @@
         <item>Chicken Karaage</item>
         <item>Curry Spring Rolls</item>
         <item>Nagi Chips</item>
-        <!--<item>Kaedama</item>-->
-        <!--<item>Nori</item>-->
-        <!--<item>Chashu</item>-->
-        <!--<item>Tamago</item>-->
-        <!--<item>Kikurage</item>-->
-        <!--<item>Kakuni</item>-->
-        <!--<item>Negi</item>-->
-        <!--<item>Kyabetsu</item>-->
-        <!--<item>Japanese Rice</item>-->
-        <!--<item>Homemade Iced Tea</item>-->
-        <!--<item>Mango Juice</item>-->
-        <!--<item>Orange Juice</item>-->
-        <!--<item>Pineapple Juice</item>-->
-        <!--<item>Sprite</item>-->
-        <!--<item>Coke Regular</item>-->
-        <!--<item>Coke Zero</item>-->
-        <!--<item>Royal</item>-->
-        <!--<item>Mineral Water</item>-->
-        <!--<item>San Mig Light</item>-->
-        <!--<item>Asahi</item>-->
-        <!--<item>Sapporo</item>-->
-        <!--<item>Kirin</item>-->
+    </string-array>
+
+    <string-array name="menu_items2">
+        <item>Kaedama</item>
+        <item>Nori</item>
+        <item>Chashu</item>
+        <item>Tamago</item>
+        <item>Kikurage</item>
+        <item>Kakuni</item>
+        <item>Negi</item>
+        <item>Kyabetsu</item>
+        <item>Japanese Rice</item>
+    </string-array>
+
+    <string-array name="menu_items3">
+        <item>Homemade Iced Tea</item>
+        <item>Mango Juice</item>
+        <item>Orange Juice</item>
+        <item>Pineapple Juice</item>
+        <item>Sprite</item>
+        <item>Coke Regular</item>
+        <item>Coke Zero</item>
+        <item>Royal</item>
+        <item>Mineral Water</item>
+        <item>San Mig Light</item>
+        <item>Asahi</item>
+        <item>Sapporo</item>
+        <item>Kirin</item>
     </string-array>
 
     <string-array name="menu_descriptions">
@@ -91,28 +101,34 @@
         <item>Japanese fried chicken perfectly marinated in special sauce. Deep fried in special breading and served with a dip of mayo mustard.</item>
         <item>A mixture of ground pork, vegetables, vermicelli and curry wrapped in rice paper then deep fried until golden brown.</item>
         <item>Made of our special dough, fried to perfection and flavored in special Japanese seasoning.</item>
-        <!--<item>In the region of Kyushu, it is common for people to enjoy another serving of noodles.</item>-->
-        <!--<item>Seaweed topping.</item>-->
-        <!--<item>Classic Nagi pork chashu topping.</item>-->
-        <!--<item>Flavored egg topping.</item>-->
-        <!--<item>Kikurage mushroom topping.</item>-->
-        <!--<item>Pork belly topping.</item>-->
-        <!--<item>Green onion topping.</item>-->
-        <!--<item>Kyabetsu topping.</item>-->
-        <!--<item>Japanese rice, served Nagi-style.</item>-->
-        <!--<item>Served ice cold.</item>-->
-        <!--<item>Served ice cold.</item>-->
-        <!--<item>Served ice cold.</item>-->
-        <!--<item>Served ice cold.</item>-->
-        <!--<item>Served ice cold.</item>-->
-        <!--<item>Served ice cold.</item>-->
-        <!--<item>Served ice cold.</item>-->
-        <!--<item>Served ice cold.</item>-->
-        <!--<item>Served ice cold.</item>-->
-        <!--<item>Served ice cold.</item>-->
-        <!--<item>Authentic Japanese beer.</item>-->
-        <!--<item>Authentic Japanese beer.</item>-->
-        <!--<item>Authentic Japanese beer.</item>-->
+    </string-array>
+
+    <string-array name="menu_descriptions2">
+        <item>In the region of Kyushu, it is common for people to enjoy another serving of noodles.</item>
+        <item>Seaweed.</item>
+        <item>Classic Nagi pork chashu.</item>
+        <item>Flavored egg - one of Nagi's classic trademarks.</item>
+        <item>Kikurage mushrooms.</item>
+        <item>Pork belly.</item>
+        <item>Green onions.</item>
+        <item>Kyabetsu.</item>
+        <item>Japanese rice, served Nagi-style.</item>
+    </string-array>
+
+    <string-array name="menu_descriptions3">
+        <item>Our homemade Nagi iced tea served ice cold.</item>
+        <item>Freshly-squeezed juice served ice cold.</item>
+        <item>Freshly-squeezed juice served ice cold.</item>
+        <item>Freshly-squeezed juice served ice cold.</item>
+        <item>Soda served ice cold.</item>
+        <item>Soda served ice cold.</item>
+        <item>Soda served ice cold.</item>
+        <item>Soda served ice cold.</item>
+        <item>Bottled water served ice cold.</item>
+        <item>Beer served ice cold.</item>
+        <item>Authentic Japanese beer served ice cold.</item>
+        <item>Authentic Japanese beer served ice cold.</item>
+        <item>Authentic Japanese beer served ice cold.</item>
     </string-array>
 
     <string-array name="menu_prices">
@@ -132,28 +148,34 @@
         <item>250</item>
         <item>170</item>
         <item>85</item>
-        <!--<item>70</item>-->
-        <!--<item>60</item>-->
-        <!--<item>120</item>-->
-        <!--<item>60</item>-->
-        <!--<item>50</item>-->
-        <!--<item>120</item>-->
-        <!--<item>60</item>-->
-        <!--<item>40</item>-->
-        <!--<item>60</item>-->
-        <!--<item>95</item>-->
-        <!--<item>80</item>-->
-        <!--<item>80</item>-->
-        <!--<item>80</item>-->
-        <!--<item>70</item>-->
-        <!--<item>70</item>-->
-        <!--<item>70</item>-->
-        <!--<item>70</item>-->
-        <!--<item>50</item>-->
-        <!--<item>85</item>-->
-        <!--<item>145</item>-->
-        <!--<item>150</item>-->
-        <!--<item>150</item>-->
+    </string-array>
+
+    <string-array name="menu_prices2">
+        <item>70</item>
+        <item>60</item>
+        <item>120</item>
+        <item>60</item>
+        <item>50</item>
+        <item>120</item>
+        <item>60</item>
+        <item>40</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="menu_prices3">
+        <item>95</item>
+        <item>80</item>
+        <item>80</item>
+        <item>80</item>
+        <item>70</item>
+        <item>70</item>
+        <item>70</item>
+        <item>70</item>
+        <item>50</item>
+        <item>85</item>
+        <item>145</item>
+        <item>150</item>
+        <item>150</item>
     </string-array>
 
 </resources>
