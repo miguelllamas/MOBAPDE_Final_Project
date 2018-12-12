@@ -102,10 +102,11 @@ public class CartActivity extends AppCompatActivity {
     public void promptDialog(){
         android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this);
 
-        builder.setTitle("CONFIRM");
+        builder.setTitle("Confirm Order");
         final TextView userInput = new TextView(this);
         final OrderIDSingleton singleton = OrderIDSingleton.getInstance();
-        userInput.setText("\t\tTOTAL BILL: " + totalTalaga + "\n\t\tConfirmationPin: " + singleton.getCurrOrderID());
+        DecimalFormat df2 = new DecimalFormat("0.00");
+        userInput.setText("\n\t\tYour Total Bill: PHP " + df2.format(totalTalaga) + "\n\t\tOrder Confirmation ID: " + singleton.getCurrOrderID());
         builder.setView(userInput);
 
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {

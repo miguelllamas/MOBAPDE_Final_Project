@@ -23,7 +23,7 @@
     <string name="check2">View Item</string>
     <string name="addButton">Add to Cart</string>
 
-    <string name="cashMSG">Enter confirmation number:</string>
+    <string name="cashMSG">Enter Order Confirmation ID:</string>
     <string name="defaultDesc">No Description Available</string>
     <string name="Back">Back</string>
 
