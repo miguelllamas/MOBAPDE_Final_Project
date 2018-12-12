@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">RamenNagiKiosk</string>
-    <string name="mainActtivityTitle">Setup Kiosk</string>
+    <string name="mainActivityTitle">KIOSK SETUP</string>
 
     <string name="cashier">Cashier Setup</string>
     <string name="customer">Customer Setup</string>

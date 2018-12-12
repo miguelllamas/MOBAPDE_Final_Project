@@ -5,32 +5,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#F20225"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo2" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:text="@string/mainActtivityTitle"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="30sp"
-        android:typeface="serif" />
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/mainActivityTitle"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:typeface="normal"
+        android:shadowColor="#7F000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2" />
 
     <Button
         android:id="@+id/cashButton"
         android:layout_width="match_parent"
         android:layout_height="101dp"
-        android:text="@string/cashier" />
+        android:text="@string/cashier"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/custButton"
         android:layout_width="match_parent"
         android:layout_height="101dp"
-        android:text="@string/customer" />
+        android:text="@string/customer"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/chefButton"
         android:layout_width="match_parent"
         android:layout_height="101dp"
-        android:text="@string/Chef" />
+        android:text="@string/Chef"
+        android:textSize="20sp" />
 </LinearLayout>
