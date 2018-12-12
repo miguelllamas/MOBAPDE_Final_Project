@@ -49,8 +49,6 @@ public class CashierView extends AppCompatActivity {
 
                         if (found){
                             promptDialog();
-                        } else {
-                            promptDialog2();
                         }
 
                     }

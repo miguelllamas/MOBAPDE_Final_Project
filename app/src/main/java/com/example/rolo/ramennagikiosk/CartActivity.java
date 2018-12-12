@@ -88,6 +88,11 @@ public class CartActivity extends AppCompatActivity {
                         }
                     }
                 }
+                if(adapter.getItemCount() <= 0){
+                    printButton.setEnabled(false);
+                } else {
+                    printButton.setEnabled(true);
+                }
                 serviceCharge = totalBill * 0.12;
                 totalTalaga = totalBill + serviceCharge;
                 totalView.setText("Total Amount: PHP " + df2.format(totalBill) + "\nService Charge: PHP "+ df2.format(serviceCharge) + "\nTotal Bill: PHP "+ df2.format(totalTalaga));
