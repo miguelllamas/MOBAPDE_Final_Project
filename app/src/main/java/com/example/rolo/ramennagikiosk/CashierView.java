@@ -71,7 +71,7 @@ public class CashierView extends AppCompatActivity {
         builder.setTitle("Success");
         final TextView userInput = new TextView(this);
         final OrderIDSingleton singleton = OrderIDSingleton.getInstance();
-        userInput.setText("Order successfully registered.");
+        userInput.setText("\t\tOrder successfully registered.");
         builder.setView(userInput);
 
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {

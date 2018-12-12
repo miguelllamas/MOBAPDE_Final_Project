@@ -105,7 +105,7 @@ public class CartActivity extends AppCompatActivity {
         builder.setTitle("CONFIRM");
         final TextView userInput = new TextView(this);
         final OrderIDSingleton singleton = OrderIDSingleton.getInstance();
-        userInput.setText("\tTOTAL BILL: " + totalTalaga + "\n\tConfirmationPin: " + singleton.getCurrOrderID());
+        userInput.setText("\t\tTOTAL BILL: " + totalTalaga + "\n\t\tConfirmationPin: " + singleton.getCurrOrderID());
         builder.setView(userInput);
 
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
