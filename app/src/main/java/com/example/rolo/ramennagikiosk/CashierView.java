@@ -68,13 +68,11 @@ public class CashierView extends AppCompatActivity {
     public void promptDialog(){
         android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this);
 
-        builder.setTitle("COMPLETE");
+        builder.setTitle("Success");
         final TextView userInput = new TextView(this);
         final OrderIDSingleton singleton = OrderIDSingleton.getInstance();
-        userInput.setText("Order Confirmed");
+        userInput.setText("Order successfully registered.");
         builder.setView(userInput);
-
-
 
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override
@@ -92,12 +90,10 @@ public class CashierView extends AppCompatActivity {
         builder.setTitle("Error");
         final TextView userInput = new TextView(this);
         final OrderIDSingleton singleton = OrderIDSingleton.getInstance();
-        userInput.setText("Could Not find Order");
+        userInput.setText("Invalid code entered. Could not find associated order.");
         builder.setView(userInput);
 
-
-
-        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.ok2, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
                 pin.setText("");

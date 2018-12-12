@@ -17,6 +17,7 @@
     <string name="invalid">Invalid input. Please try again.</string>
 
     <string name="ok">Submit</string>
+    <string name="ok2">OK</string>
 
     <string name="check">View Order</string>
     <string name="addButton">Add to Cart</string>
@@ -25,7 +26,7 @@
     <string name="defaultDesc">No Description Available</string>
     <string name="Back">Back</string>
 
-    <string name="orderTitle">Orders</string>
+    <string name="orderTitle">ORDER QUEUE</string>
     <string name="OrderD">Order Details</string>
     <string name="mark">Mark as Complete</string>
     <string name="cart">Cart</string>
