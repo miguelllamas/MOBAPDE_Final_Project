@@ -3,6 +3,7 @@ package com.example.rolo.ramennagikiosk;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -28,7 +29,9 @@ public class OrderDetails extends AppCompatActivity {
         setContentView(R.layout.activity_order_details);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        orderView = findViewById(R.id.listView);
+        orderView = (TextView) findViewById(R.id.listView);
+        orderView.setMovementMethod(new ScrollingMovementMethod());
+
         back = findViewById(R.id.returnButton);
         archive = findViewById(R.id.markFinish);
         orders = getIntent().getStringExtra("orders");

@@ -129,7 +129,8 @@ public class CartActivity extends AppCompatActivity {
                 DatabaseReference dr = fd.getReference();
                 dr.child(singleton.getCurrOrderID()).child("todo").setValue("false");
                 singleton.incrementID();
-                singleton.setCurrOrderID("ORDERS"+singleton.getID());
+                singleton.incrementCTR();
+                singleton.setCurrOrderID(singleton.getOrderCTR()+"ORDERSSSS"+singleton.getID());
                 finish();
 
             }

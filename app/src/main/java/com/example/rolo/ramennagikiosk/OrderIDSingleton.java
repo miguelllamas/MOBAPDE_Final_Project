@@ -10,6 +10,8 @@ public class OrderIDSingleton {
     private String currOrderID;
     private static int ID;
 
+    private static int orderCTR = 0;
+
     // private constructor restricted to this class itself
     private OrderIDSingleton() {
         orders = new ArrayList<>();
@@ -51,5 +53,13 @@ public class OrderIDSingleton {
     public void incrementID(){
         Random rand = new Random();
         ID = rand.nextInt(400000) + 100000;
+    }
+
+    public static int getOrderCTR() {
+        return orderCTR;
+    }
+
+    public void incrementCTR(){
+        orderCTR++;
     }
 }
