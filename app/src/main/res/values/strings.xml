@@ -37,6 +37,7 @@
     <string name="menu1">DISHES</string>
     <string name="menu2">SIDES</string>
     <string name="menu3">DRINKS</string>
+    <string name="cart1">CART</string>
 
     <string-array name="menu_items">
         <item>Original King (Butao)</item>
