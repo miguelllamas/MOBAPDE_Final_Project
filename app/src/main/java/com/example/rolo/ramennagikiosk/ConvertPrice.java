@@ -34,7 +34,7 @@ public class ConvertPrice {
         /* EXTRA ORDERS */
         item_name.add("Kaedama"); item_price.add(70);
         item_name.add("Nori"); item_price.add(60);
-        item_name.add("Chasu"); item_price.add(120);
+        item_name.add("Chashu"); item_price.add(120);
         item_name.add("Tamago"); item_price.add(60);
         item_name.add("Kikurage"); item_price.add(50);
         item_name.add("Kakuni"); item_price.add(120);
