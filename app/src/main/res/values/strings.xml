@@ -27,7 +27,7 @@
     <string name="Back">Back</string>
 
     <string name="orderTitle">ORDER QUEUE</string>
-    <string name="OrderD">Order Details</string>
+    <string name="OrderD">ORDER DETAILS</string>
     <string name="mark">Mark as Complete</string>
     <string name="cart">Cart</string>
     <string name="print">Print Receipt and Confirmation Number</string>
