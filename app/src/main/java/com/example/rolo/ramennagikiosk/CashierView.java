@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -20,6 +21,9 @@ public class CashierView extends AppCompatActivity {
 
     private EditText pin;
     private Button submit;
+    FirebaseDatabase fd;
+    DatabaseReference dr;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,25 +32,26 @@ public class CashierView extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         pin = findViewById(R.id.CNPin);
         submit = findViewById(R.id.confirmButton);
+        fd = FirebaseDatabase.getInstance();
+        dr = fd.getReference();
 
         submit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                FirebaseDatabase fd = FirebaseDatabase.getInstance();
-                final DatabaseReference dr = fd.getReference();
-
 
                 dr.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         boolean found = false;
+                        Log.d("TEST TAG", " I FCKING HATE MY LIFE");
                         for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
                             // TODO: handle the post
-                            if (pin.getText().toString().equals(postSnapshot.getKey().toString())){
+                            Log.d("TEST TAG", "TODO VALUE: " + postSnapshot.child("todo").getValue() + " PIN VALUE: " + pin.getText().toString() + " SNAP VALUE: " + postSnapshot.getKey().toString());
+//                            Log.d("BOOL TAG", "BOOL VAL of PIN AND SNAP: " + pin.getText().toString().equals(postSnapshot.getKey().toString()) + "BOOL VAL of child value and false: " + postSnapshot.child("todo").getValue().equals("false"));
+                            if (pin.getText().toString().equals(postSnapshot.getKey().toString()) && postSnapshot.child("todo").getValue().equals("false")){
                                 dr.child(pin.getText().toString()).child("todo").setValue("true");
                                 found = true;
                             }
                         }
-
                         if (found){
                             promptDialog();
                         }
@@ -58,8 +63,13 @@ public class CashierView extends AppCompatActivity {
 
                     }
                 });
+
+
+
+
             }
         });
+
 
     }
 
