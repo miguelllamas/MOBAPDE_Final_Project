@@ -130,7 +130,10 @@ public class CartActivity extends AppCompatActivity {
                 dr.child(singleton.getCurrOrderID()).child("todo").setValue("false");
                 singleton.incrementID();
                 singleton.incrementCTR();
-                singleton.setCurrOrderID(singleton.getOrderCTR()+"ORDERSSSS"+singleton.getID());
+                singleton.setCurrOrderID(singleton.getOrderCTR()+"ORDERS"+singleton.getID());
+                if (singleton.getOrderCTR() < 10){
+                    singleton.setCurrOrderID("0"+singleton.getOrderCTR()+"ORDERS"+singleton.getID());
+                }
                 finish();
 
             }

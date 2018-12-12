@@ -23,8 +23,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         OrderIDSingleton singleton = OrderIDSingleton.getInstance();
-        singleton.addOrderID("ORDERS"+singleton.getID());
-        singleton.setCurrOrderID("ORDERS"+singleton.getID());
+        singleton.addOrderID(singleton.getOrderCTR()+"ORDERS"+singleton.getID());
+        singleton.setCurrOrderID(singleton.getOrderCTR()+"ORDERS"+singleton.getID());
+
+        if (singleton.getOrderCTR() < 10){
+            singleton.addOrderID("0"+singleton.getOrderCTR()+"ORDERS"+singleton.getID());
+            singleton.setCurrOrderID("0"+singleton.getOrderCTR()+"ORDERS"+singleton.getID());
+        }
 
         ChefButton = findViewById(R.id.chefButton);
         CustomerButton = findViewById(R.id.custButton);
