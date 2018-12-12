@@ -42,6 +42,35 @@
         <item>Aurora Shrimp</item>
         <item>Nagi Vanilla Ice Cream</item>
         <item>Sesame Q</item>
+        <item>Nagi Star Salad</item>
+        <item>Fried Shrimp with Tartar Sauce</item>
+        <item>Pork Katsu Roll</item>
+        <item>Chashu Rice</item>
+        <item>Chicken Karaage</item>
+        <item>Curry Spring Rolls</item>
+        <item>Nagi Chips</item>
+        <!--<item>Kaedama</item>-->
+        <!--<item>Nori</item>-->
+        <!--<item>Chashu</item>-->
+        <!--<item>Tamago</item>-->
+        <!--<item>Kikurage</item>-->
+        <!--<item>Kakuni</item>-->
+        <!--<item>Negi</item>-->
+        <!--<item>Kyabetsu</item>-->
+        <!--<item>Japanese Rice</item>-->
+        <!--<item>Homemade Iced Tea</item>-->
+        <!--<item>Mango Juice</item>-->
+        <!--<item>Orange Juice</item>-->
+        <!--<item>Pineapple Juice</item>-->
+        <!--<item>Sprite</item>-->
+        <!--<item>Coke Regular</item>-->
+        <!--<item>Coke Zero</item>-->
+        <!--<item>Royal</item>-->
+        <!--<item>Mineral Water</item>-->
+        <!--<item>San Mig Light</item>-->
+        <!--<item>Asahi</item>-->
+        <!--<item>Sapporo</item>-->
+        <!--<item>Kirin</item>-->
     </string-array>
 
     <string-array name="menu_descriptions">
@@ -54,6 +83,35 @@
         <item>Deep fried prawns with crispy noodles topped with aurora sauce.</item>
         <item>Nagi\'s vanilla ice cream served with 2 kinds of liquor.</item>
         <item>Thinly sliced cucumber seasoned with Nagi\'s special spices.</item>
+        <item>Freshly sliced cabbage and lettuce with fried crispy noodles generously topped with Nagi\'s special dressing and slices of cherry tomatoes.</item>
+        <item>Deep fried prawns served with tartar sauce.</item>
+        <item>Thinly sliced pork belly rolled with cheese and served with Nagi\'s original sauce.</item>
+        <item>Japanese rice cooked in special sauce topped with roasted pork and served with a delightful blend of soy sauce and mayo.</item>
+        <item>Japanese fried chicken perfectly marinated in special sauce. Deep fried in special breading and served with a dip of mayo mustard.</item>
+        <item>A mixture of ground pork, vegetables, vermicelli and curry wrapped in rice paper then deep fried until golden brown.</item>
+        <item>Made of our special dough, fried to perfection and flavored in special Japanese seasoning.</item>
+        <!--<item>In the region of Kyushu, it is common for people to enjoy another serving of noodles.</item>-->
+        <!--<item>Seaweed topping.</item>-->
+        <!--<item>Classic Nagi pork chashu topping.</item>-->
+        <!--<item>Flavored egg topping.</item>-->
+        <!--<item>Kikurage mushroom topping.</item>-->
+        <!--<item>Pork belly topping.</item>-->
+        <!--<item>Green onion topping.</item>-->
+        <!--<item>Kyabetsu topping.</item>-->
+        <!--<item>Japanese rice, served Nagi-style.</item>-->
+        <!--<item>Served ice cold.</item>-->
+        <!--<item>Served ice cold.</item>-->
+        <!--<item>Served ice cold.</item>-->
+        <!--<item>Served ice cold.</item>-->
+        <!--<item>Served ice cold.</item>-->
+        <!--<item>Served ice cold.</item>-->
+        <!--<item>Served ice cold.</item>-->
+        <!--<item>Served ice cold.</item>-->
+        <!--<item>Served ice cold.</item>-->
+        <!--<item>Served ice cold.</item>-->
+        <!--<item>Authentic Japanese beer.</item>-->
+        <!--<item>Authentic Japanese beer.</item>-->
+        <!--<item>Authentic Japanese beer.</item>-->
     </string-array>
 
     <string-array name="menu_prices">
@@ -66,6 +124,35 @@
         <item>370</item>
         <item>150</item>
         <item>160</item>
+        <item>280</item>
+        <item>370</item>
+        <item>295</item>
+        <item>190</item>
+        <item>250</item>
+        <item>170</item>
+        <item>85</item>
+        <!--<item>70</item>-->
+        <!--<item>60</item>-->
+        <!--<item>120</item>-->
+        <!--<item>60</item>-->
+        <!--<item>50</item>-->
+        <!--<item>120</item>-->
+        <!--<item>60</item>-->
+        <!--<item>40</item>-->
+        <!--<item>60</item>-->
+        <!--<item>95</item>-->
+        <!--<item>80</item>-->
+        <!--<item>80</item>-->
+        <!--<item>80</item>-->
+        <!--<item>70</item>-->
+        <!--<item>70</item>-->
+        <!--<item>70</item>-->
+        <!--<item>70</item>-->
+        <!--<item>50</item>-->
+        <!--<item>85</item>-->
+        <!--<item>145</item>-->
+        <!--<item>150</item>-->
+        <!--<item>150</item>-->
     </string-array>
 
 </resources>

@@ -17,7 +17,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuHolder>{
     private String[] menu_items;
     private String[] menu_prices;
     private String[] menu_descriptions;
-    private int[] menu_images = {R.drawable.menu1, R.drawable.menu2, R.drawable.menu3, R.drawable.menu4, R.drawable.menu5, R.drawable.menu6, R.drawable.menu7, R.drawable.menu8, R.drawable.menu9};
+    private int[] menu_images = {R.drawable.menu1, R.drawable.menu2, R.drawable.menu3, R.drawable.menu4, R.drawable.menu5, R.drawable.menu6, R.drawable.menu7, R.drawable.menu8, R.drawable.menu9, R.drawable.menu10, R.drawable.menu11, R.drawable.menu12, R.drawable.menu13, R.drawable.menu14, R.drawable.menu15, R.drawable.menu16};
 
     public MenuAdapter(Context activity){
         this.menu = new ArrayList<>();
