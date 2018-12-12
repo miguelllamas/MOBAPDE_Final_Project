@@ -17,7 +17,7 @@ public class CustomerView extends AppCompatActivity {
 
 //    private TextView mTextMessage;
 
-    private int[] menu_images1 = {R.drawable.menu1, R.drawable.menu2, R.drawable.menu3, R.drawable.menu4, R.drawable.menu5, R.drawable.menu6, R.drawable.menu7, R.drawable.menu8, R.drawable.menu9, R.drawable.menu10, R.drawable.menu11, R.drawable.menu12, R.drawable.menu13, R.drawable.menu14, R.drawable.menu15, R.drawable.menu16};
+    private int[] menu_images1 = {R.drawable.menu1, R.drawable.menu2, R.drawable.menu4, R.drawable.menu3, R.drawable.menu5, R.drawable.menu6, R.drawable.menu7, R.drawable.menu8, R.drawable.menu9, R.drawable.menu10, R.drawable.menu11, R.drawable.menu12, R.drawable.menu13, R.drawable.menu14, R.drawable.menu15, R.drawable.menu16};
     private int[] menu_images2 = {R.drawable.menu17, R.drawable.menu18, R.drawable.menu19, R.drawable.menu20, R.drawable.menu21, R.drawable.menu22, R.drawable.menu23, R.drawable.menu24, R.drawable.menu25};
     private int[] menu_images3 = {R.drawable.menu26, R.drawable.menu27, R.drawable.menu28, R.drawable.menu29, R.drawable.menu30, R.drawable.menu31, R.drawable.menu32, R.drawable.menu33, R.drawable.menu34, R.drawable.menu35, R.drawable.menu36, R.drawable.menu37, R.drawable.menu38};
 
