@@ -41,9 +41,10 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderHolder> {
         dr.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
+                order_Data.clear();
                 for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
                     // TODO: handle the post
+
                     ArrayList<String> strings = new ArrayList<>();
                     for (DataSnapshot child: postSnapshot.getChildren()){
                         if (!child.getValue().toString().equals("false") && !child.getValue().toString().equals("true")){
